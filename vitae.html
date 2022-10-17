@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Favicon -->
+  <!-- Favicon
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
@@ -26,24 +26,25 @@
   <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  -->
+
   <!-- jQuery UI css -->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <!-- Google font, Roboto -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Google font: Open Sans Pro -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   <!-- FontAwesome icon include -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/b730292a05.js" crossorigin="anonymous"></script>
 
   <!-- Main local styles -->
   <link rel="stylesheet" href="css/main.css">
 
-  <title>Jane Smith, PhD</title>
+  <title>Jacob Swisher</title>
 
 </head>
 
@@ -58,25 +59,22 @@
     <div class="row mx-4">
       <div class="col-sm-12">
 
-        <h1 id="page-lead">Vitae</h1>
+        <div style="text-align:center"><h1 id="page-lead">Curriculum Vitae</h1></div>
 
-        <p>Find my current curriculum vitae below. References available upon request.</p>
-
-        <p class='text-right'><a href='https://docs.google.com/document/d/1_AJVKpKeyh_NFvlKA6nOT7GbR8NuFfJjQn-5tIumWpY/edit?usp=sharing' target='_blank'><i class='fad fa-print fa-fw' aria-hidden='true'></i>&nbsp;Print Vitae</a></p>
-        <iframe id="vitae-iframe" width='100%' height='900px' frameborder='0' scrolling='yes' class='embed-responsive-item' src='https://docs.google.com/document/d/1_AJVKpKeyh_NFvlKA6nOT7GbR8NuFfJjQn-5tIumWpY/edit?usp=sharing' allowfullscreen>
-        </iframe>
-
+        <p class='text-center'><a href='https://docs.google.com/document/d/1m2bz7WIGxr2b2vzSeo7WRiA-jUKBp4lpc0re8vGrKCw/edit?usp=sharing' target='_blank'><i class='fad fa-print fa-fw' aria-hidden='true'></i>&nbsp;Print Curriculum Vitae</a></p>
+        <div style="text-align: center">
+          <iframe id="vitae-iframe" width='80%' height='900px' frameborder='0' scrolling='yes' class='embed-responsive-item' src='https://docs.google.com/document/d/e/2PACX-1vQepH5LI58Vx56hB-5NzEqT2nx4UVAw07x9DEZCl8WKzxxqSgnzVwQ93Ic7kKKYuBrFG5gd0gEi4d65/pub?embedded=true' allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </div>
 
   </div>
   <!-- #wrapper .container -->
 
-  <!-- Acknowledge include -->
-    <div id="acknowledge"></div>
-
-  <!-- Footer include -->
+  <!-- Footer include 
   <div id="page-footer"></div>
+  -->
 
   <!-- Back to top button -->
   <a role="button" id="back-to-top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-angle-up" aria-hidden="true"></i></a>
@@ -121,11 +119,6 @@
         $("#me").removeClass("active");
         $("#vitae").addClass("active");
 
-      });
-
-      // Load the acknowledge footer
-      $("#acknowledge").load("acknowledge.html", function() {
-        console.log("acknowledge loaded");
       });
 
     });
